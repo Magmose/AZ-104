@@ -1,0 +1,38 @@
+# Storage Abbreviations
+- ACL : Access Control List
+- ADLS : Azure Data Lake Storage
+- ANF : Azure NetApp Files
+- AVS : Azure VMware Solution
+- Blob : Binary Large Object
+- CORS : Cross-Origin Resource Sharing
+- DFS : Data File System (used with ADLS Gen2)
+- GZRS : Geo-Zonal Redundant Storage
+- GRS : Geo-Redundant Storage
+- LRS : Locally Redundant Storage
+- NFS : Network File System - Protocol
+- NSG : Network Security Group
+- PaaS : Platform as a Service
+- RA-GRS : Read-Access Geo-Redundant Storage
+- RA-GZRS : Read-Access Geo-Zonal Redundant Storage
+- SAS : Shared Access Signature
+- SMB : Server Message Block - Protocol port 445
+- SRP : Storage Resource Provider
+- TDE : Transparent Data Encryption
+- URI : Uniform Resource Identifier
+- VHD : Virtual Hard Disk
+- VM : Virtual Machine
+- VNET : Virtual Network
+- ZRS : Zone Redundant Storage
+
+# Storage Explanations
+- Account SAS : An account SAS is secured with the storage account key. An account SAS delegates access to resources in one or more of the storage services. All of the operations available via a service or user delegation SAS are also available via an account SAS.
+- Append blobs : Append blobs are blocks that are optimized for appends i.e. if you modify blocks will be added at the end of your Append blob. Very useful for situations that require adding data to the existing blob without modifying the existing ones. You cannot update or delete the existing blocks, and neither do these have block IDs. Each block can be a maximum of 4MB, and an append blob can have up to 50,000 blocks.
+- Azure Blob Storage : Blobs in Azure Blob Storage are a flat namespace. Blob data in Azure Blob Storage is accessed through a container.
+- Azure Disks : Page blobs in Azure Disks are stored as 512-byte pages. Page blob data is exclusive to a single virtual machine.
+- Azure Files : Files in an Azure Files share are true directory objects. Data in Azure Files is accessed through file shares across multiple virtual machines.
+- Block blobs : Block blobs are used for documents, image, video files and allow insertion, replacement, and deletion of blocks. Blob storage can contain up to 50,000 blocks. Each blob is identified by its ID and can be of different sizes, reaching a maximum of 100MB.
+- Page blobs : Page blobs (a collection of 512-byte pages, hence the name) are optimized for random read/write operations. You need to specify your page blob size with a maximum size of 8TB.
+- SAS : A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example: What resources the client may access, what permissions they have to those resources, and how long the SAS is valid.
+- Service SAS : A service SAS is secured with the storage account key. A service SAS delegates access to a resource in only one of the Azure Storage services: Blob storage, Queue storage, Table storage, or Azure Files.
+- User delegation SAS : A user delegation SAS is secured with Microsoft Entra credentials and also by the permissions specified for the SAS. A user delegation SAS applies to Blob storage only.
+- SMB : The Server Message Block protocol (SMB protocol) is a client-server communication protocol used for sharing access to files, printers, serial ports and other resources on a network.
